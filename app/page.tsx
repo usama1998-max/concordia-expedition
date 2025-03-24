@@ -4,11 +4,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-       
-
       <section className="home">
           <header>
-              <h4>Traiblaze</h4>
+              <Image src={"/logos/logo-transparent-white.png"} alt="" width={"80"} height={"80"} />
               <nav id="navbar">
                   <i className="fa fa-close"></i>
                   <a href="#" className="active">about</a>
