@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <section className="home">
           <header>
-              <Image src={"/logos/logo-transparent-white.png"} alt="" width={"80"} height={"80"} />
+              <Image className="logo" src={"/logos/logo-transparent-white.png"} alt="" width={"80"} height={"80"} />
               <nav id="navbar">
                   <i className="fa fa-close"></i>
                   <a href="#" className="active">about</a>
@@ -14,10 +14,10 @@ export default function Home() {
                   <a href="#">tour</a>
                   <a href="#">contact</a>
               </nav>
-              <div className="actions">
+              {/* <div className="actions">
                   <a className="btn" href="#">login</a>
                   <i className="fa fa-bars"></i>
-              </div>
+              </div> */}
           </header>
 
           <div className="main">
@@ -64,7 +64,7 @@ export default function Home() {
           <div className="responsive-text">
               <div className="heading-box">
                   <h6 className="label">best location</h6>
-                  <h2 className="heading">indonesia tourism</h2>
+                  <h2 className="heading">Pakistan Tourism</h2>
               </div>
               <div className="text-box">
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ex sit consequuntur, dicta quaerat voluptatibus distinctio corporis beatae iusto ipsam.</p>
@@ -87,14 +87,21 @@ export default function Home() {
                   </ul>
               </div>
               <div className="box">
-                  <Image src="/assets/location3.jpg" alt=""  width={"500"} height={"500"} />
+                  <Image src="/assets/location4.jpg" alt=""  width={"500"} height={"500"} />
                   <ul>
                       <li>lampung, south sumatra</li>
                       <li>sumatra tourism</li>
                   </ul>
               </div>
               <div className="box">
-                  <Image src="/assets/location4.jpg" alt=""  width={"500"} height={"500"} />
+                  <Image src="/assets/location3.jpg" alt=""  width={"300"} height={"500"} />
+                  <ul>
+                      <li>jogjakarta, central java</li>
+                      <li>borobudur temple tour</li>
+                  </ul>
+              </div>
+              <div className="box">
+                  <Image src="/assets/location5.jpg" alt=""  width={"300"} height={"500"} />
                   <ul>
                       <li>jogjakarta, central java</li>
                       <li>borobudur temple tour</li>

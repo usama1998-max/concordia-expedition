@@ -734,6 +734,47 @@ footer .copright p {
 }
 
 @media (max-width: 546px) {
+
+    .home header nav{
+      /* margin-top: 450px;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50;
+      z-index: 999999;
+      border: 2px solid red; */
+      display: none;
+
+    }
+
+    .home{
+      width: 100%;
+      padding: 20px;
+    }
+
+    .home header .logo{
+      width: 200px;
+      height: 200px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    header{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      
+      /* border: 2px solid red; */
+    }
+
+    .home .main {
+      margin-top: 150px;
+    }
+
     .heading {
         font-size: 4rem;
     }
