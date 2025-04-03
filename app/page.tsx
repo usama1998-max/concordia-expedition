@@ -1,5 +1,9 @@
 // import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
+import { FaFacebook, FaInstagram, FaYoutube, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import ScrollToBottom from "./components/ScrollToContact";
 
 export default function Home() {
   return (
@@ -9,10 +13,10 @@ export default function Home() {
               <Image className="logo" src={"/logos/logo-transparent-white.png"} alt="" width={"80"} height={"80"} />
               <nav id="navbar">
                   <i className="fa fa-close"></i>
-                  <a href="#" className="active">about</a>
-                  <a href="#">services</a>
+                  <Link href="/about" className="active">about</Link>
+                  <Link href="/services">services</Link>
                   <a href="#">tour</a>
-                  <a href="#">contact</a>
+                  <a href="#"><ScrollToBottom /></a>
               </nav>
               {/* <div className="actions">
                   <a className="btn" href="#">login</a>
@@ -114,7 +118,7 @@ export default function Home() {
 
       <section className="booking">
           <div className="image">
-              <Image src="/assets/work-process.jpg" alt="" width={"300"} height={"300"} />
+              <Image src="/assets/work-process.jpg" alt="" width={"300"} height={"100"} />
           </div>
 
           <div className="process">
@@ -252,7 +256,13 @@ export default function Home() {
               <ul>
                   <h4>about</h4>
                   <li><a href="#">about us</a></li>
-                  <li><a href="#">blog</a></li>
+                  <li>  
+                    <h4>Contact</h4>
+                    <ul style={{marginTop: "8px"}}>
+                        <li><a href="#"><FaWhatsapp /> +923499816568</a></li>
+                        <li><a href="#"><FaWhatsapp /> +923335300444</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">careers</a></li>
                   <li><a href="#">jobs</a></li>
                   <li><a href="#">in press</a></li>
@@ -285,9 +295,16 @@ export default function Home() {
                   <button>submit</button>
               </div>
               <ul className="social-links">
-                  <li><i className="fa-brands fa-square-instagram"></i></li>
-                  <li><i className="fa-brands fa-square-facebook"></i></li>
-                  <li><i className="fa-brands fa-youtube"></i></li>
+                  <li>
+                    <a 
+                      target="_blank" 
+                      href="https://www.instagram.com/concordia_expeditions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <FaInstagram className="social-icons" />
+                    </a>
+                  </li>  
+                  <li><FaFacebook className="social-icons" /></li>
+                  <li><FaYoutube className="social-icons" /></li>
+                  <li><FaXTwitter className="social-icons" /></li>
               </ul>
           </div>
       </footer>
