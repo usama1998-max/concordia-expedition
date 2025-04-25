@@ -4,8 +4,12 @@ import Link from "next/link";
 import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import ScrollToBottom from "./components/ScrollToContact";
+import FAQ from './FAQ/FAQ';
+
+
 
 export default function Home() {
+
     return (
         <div>
             <section className="home">
@@ -105,7 +109,7 @@ export default function Home() {
 
             <section className="booking">
                 <div className="image">
-                    <Image src="/assets/work-process.jpg" alt="" width={"300"} height={"100"} />
+                    <Image src="/assets/work-process.jpg" alt="Pakistan Tourism" width={"300"} height={"100"} />
                 </div>
 
                 <div className="process">
@@ -232,9 +236,16 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="action">
-                    <a href="#">view more</a>
-                </div>
+            </section>
+
+            <section className="faq">
+                <h6 className="label">Have any question</h6>
+                <h1 className="heading">FAQs</h1>
+                <main>
+                    <h1 className="text-3xl font-bold mb-6">Frequently Asked Questions</h1>
+                    <FAQ />
+                </main>
+
             </section>
 
 
@@ -250,23 +261,11 @@ export default function Home() {
                                 <li><a href="#"><FaWhatsapp /> +923335300444</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">careers</a></li>
-                        <li><a href="#">jobs</a></li>
-                        <li><a href="#">in press</a></li>
                         <li><Link href="/gallery">Gallery</Link></li>
                     </ul>
-                    <ul>
-                        <h4>support</h4>
-                        <li><a href="#">contact us</a></li>
-                        <li><a href="#">online chat</a></li>
-                        <li><a href="#">whatsapp</a></li>
-                        <li><a href="#">telegram</a></li>
-                        <li><a href="#">ticketing</a></li>
-                        <li><a href="#">call center</a></li>
-                    </ul>
+
                     <ul>
                         <h4>FAQ</h4>
-                        <li><a href="#">account</a></li>
                         <li><a href="#">booking</a></li>
                         <li><a href="#">payment</a></li>
                         <li><a href="#">returns</a></li>
