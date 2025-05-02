@@ -3,36 +3,42 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import ScrollToBottom from "./components/ScrollToContact";
+// import ScrollToBottom from "./components/ScrollToContact";
 import FAQ from './FAQ/FAQ';
-
+import SlideUpText from './textSlide/textSlide';
 
 
 export default function Home() {
 
     return (
         <div>
+            <section className="contactHeader">
+                <h1>Contact</h1>
+                <p><FaWhatsapp /> +923499816568</p>
+                <p><FaWhatsapp /> +923335300444</p>
+            </section>
+
             <section className="home">
                 <header>
-                    <Image className="logo" src={"/logos/logo-transparent-white.png"} alt="" width={"80"} height={"80"} />
-                    <nav id="navbar">
+                    <Image className="logo" src={"/logos/logo-transparent-white.png"} alt="" style={{ marginTop: "30px" }} width={"250"} height={"250"} />
+                    {/* <nav id="navbar">
                         <i className="fa fa-close"></i>
                         <Link href="/about" className="active">About</Link>
                         <Link href="/services">Services</Link>
                         <Link href="/gallery">Gallery</Link>
                         <Link href="/tour">Tour Packages</Link>
                         <a href="#"><ScrollToBottom /></a>
-                    </nav>
+                    </nav> */}
                 </header>
 
                 <div className="main">
-                    <h1>Explore Pakistan’s stunning landscapes and vibrant culture.</h1>
-                    <p>Discover the adventure of a lifetime in Pakistan, where nature meets tradition.</p>
+                    {/* <h1 style={{ textTransform: "uppercase" }}>Explore Pakistan’s stunning landscapes and vibrant culture.</h1>
+                    <p style={{ textTransform: "uppercase" }}>Go, Find, Explore</p> */}
+                    <SlideUpText />
 
                 </div>
 
             </section>
-
 
             <section className="achivment">
                 <div className="box">
@@ -51,6 +57,18 @@ export default function Home() {
                     <h5>5.0</h5>
                     <p>average rating</p>
                 </div>
+            </section>
+
+            <section className="clients">
+
+                <div className="heading-box">
+                    <h2 className="heading">Our subsidiaries</h2>
+                </div>
+
+                <div>
+                    LG
+                </div>
+
             </section>
 
 

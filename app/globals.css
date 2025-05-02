@@ -59,7 +59,153 @@ body {
     background: #f8f8fa;
 }
 
+
+/* ------------------------- contact header section starts here ---------------- */
+
+.contactHeader{
+    background-color: #000;
+    color: #f2f7ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50px;
+    padding: 10px;
+}
+
+.contactHeader > p{
+    font-size: 1.7rem;
+}
+
+.contactHeader > h1{
+    font-size: 1.9rem;
+}
+
+/* ------------------------- contact header section ends here ---------------- */
+
 /* ------------------------- home section starts hare ---------------- */
+  
+
+.card {
+    margin-top: 5%;
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+    /* border: 1px solid white; */
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loader {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 50px;
+    padding: 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+
+  .loader > h1{
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+    position: relative;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    z-index: 1;
+  }
+  
+  .words {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 100px;
+    /* border: 1px solid red; */
+    align-self: center;
+    width: 80%;
+    padding-top: 100px;
+  }
+  .words::after {
+    content: "";
+    position: relative;
+    inset: 0;
+    background: linear-gradient(
+      var(--bg-color) 10%,
+      transparent 30%,
+      transparent 70%,
+      var(--bg-color) 90%
+    );
+    z-index: 20;
+  }
+  
+.word {
+    display: block;
+    height: 100px;
+    padding-left: 10px;
+    color: #ffffff;
+    animation: spin_4991 5s infinite;
+}
+  
+@keyframes spin_4991 {
+    10% {
+      -webkit-transform: translateY(-102%);
+      transform: translateY(-102%);
+    }
+  
+    25% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  
+    35% {
+      -webkit-transform: translateY(-202%);
+      transform: translateY(-202%);
+    }
+  
+    50% {
+      -webkit-transform: translateY(-200%);
+      transform: translateY(-200%);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-302%);
+      transform: translateY(-302%);
+    }
+  
+    75% {
+      -webkit-transform: translateY(-300%);
+      transform: translateY(-300%);
+    }
+  
+    85% {
+      -webkit-transform: translateY(-402%);
+      transform: translateY(-402%);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-400%);
+      transform: translateY(-400%);
+    }
+}
+   
 
 .home {
     width: 100%;
@@ -98,6 +244,15 @@ body {
     text-transform: uppercase;
     font-weight: 600;
 }
+
+.home header .logo{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 
 .home header nav {
     display: flex;
@@ -219,6 +374,16 @@ body {
 }
 
 /* ---------------------------- achivment section ends here ---------------  */
+
+/* ---------------------------- clients section starts here ---------------  */
+.clients{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-top: -50px;
+
+}
+/* ---------------------------- client section starts here ---------------  */
 
 /* ----------------------- best location section starts hare ----------------  */
 
@@ -657,6 +822,11 @@ footer .copright p {
 /* ----------------------- media query section starts hare --------------------- */
 
 @media (max-width: 1065px) {
+   .card{
+    margin-top: 15%;
+   }
+
+
    .heading {
     white-space: wrap;
    }
@@ -677,12 +847,19 @@ footer .copright p {
 }
 
 @media (max-width: 795px) {
+    .words{
+        font-size: 30px;
+    }
+
     .home .main h1 {
         font-size: 6rem;
     }
 }
 
 @media (max-width: 706px) {
+    .words{
+        font-size: 30px;
+    }
 
     section {
         padding: 4rem;
@@ -722,7 +899,7 @@ footer .copright p {
         transform: translate(0, 0);
     }
 
-    .home .main .search ul li {
+    .home .main {
         padding: .5rem;
     }
 
@@ -747,23 +924,24 @@ footer .copright p {
 }
 
 @media (max-width: 546px) {
-
-    .home header nav{
-      /* margin-top: 450px;
-      width: 100%;
-      height: 100vh;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 50;
-      z-index: 999999;
-      border: 2px solid red; */
-      display: none;
-
+    .contactHeader{
+        flex-direction: column;
+        height: 100px;
     }
+
+    .card{
+        margin-top: -180px;
+    }
+
+    .words{
+        font-size: 20px;
+    }
+
 
     .home{
       width: 100%;
+      height: 200px;
+      min-height: 70vh;
       padding: 20px;
     }
 
@@ -774,6 +952,10 @@ footer .copright p {
       margin-left: auto;
       margin-right: auto;
       display: block;
+    }
+
+    .logo{
+        height: 200px;
     }
 
     header{
