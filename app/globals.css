@@ -166,7 +166,7 @@ body {
     height: 100px;
     padding-left: 10px;
     color: #ffffff;
-    animation: spin_4991 5s infinite;
+    animation: spin_4991 7s infinite;
 }
   
 @keyframes spin_4991 {
