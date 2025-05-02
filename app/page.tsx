@@ -1,7 +1,14 @@
 // import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import {
+    FaFacebook,
+    FaInstagram,
+    FaYoutube,
+    FaWhatsapp,
+    // FaPhoneAlt, 
+    FaEnvelope
+} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 // import ScrollToBottom from "./components/ScrollToContact";
 import FAQ from './FAQ/FAQ';
