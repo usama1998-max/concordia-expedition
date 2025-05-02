@@ -1,7 +1,7 @@
 // import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 // import ScrollToBottom from "./components/ScrollToContact";
 import FAQ from './FAQ/FAQ';
@@ -13,9 +13,11 @@ export default function Home() {
     return (
         <div>
             <section className="contactHeader">
-                <h1>Contact</h1>
-                <p><FaWhatsapp /> +923499816568</p>
-                <p><FaWhatsapp /> +923335300444</p>
+                <h1>Contact: </h1>
+
+                <a target="_blank" href="https://wa.me/+923499816568"><FaWhatsapp size={20} /> +923499816568</a>
+                <a target="_blank" href="https://wa.me/+923415848526"><FaWhatsapp size={20} /> +923415848526</a>
+                <a target="_blank" href="mailto:concordiaexpeditions@gmail.com"><FaEnvelope size={20} /> concordiaexpeditions@gmail.com</a>
             </section>
 
             <section className="home">
@@ -42,20 +44,20 @@ export default function Home() {
 
             <section className="achivment">
                 <div className="box">
-                    <h5>10M+</h5>
-                    <p>total customers</p>
+                    <Image src="/assets/Corporate.jpg" alt="" width={150} height={150} />
+                    <p>Corporate Tour</p>
                 </div>
                 <div className="box">
-                    <h5>09+</h5>
-                    <p>years of experience</p>
+                    <Image src="/assets/Private.jpg" alt="" width={150} height={150} />
+                    <p>Private Tour</p>
                 </div>
                 <div className="box">
-                    <h5>12K</h5>
-                    <p>total destinations</p>
+                    <Image src="/assets/Group.jpg" alt="" width={150} height={150} />
+                    <p>Group Tour</p>
                 </div>
                 <div className="box">
-                    <h5>5.0</h5>
-                    <p>average rating</p>
+                    <Image src="/assets/Expedition.jpg" alt="" width={150} height={150} />
+                    <p>Expeditions</p>
                 </div>
             </section>
 
@@ -63,10 +65,22 @@ export default function Home() {
 
                 <div className="heading-box">
                     <h2 className="heading">Our subsidiaries</h2>
+
                 </div>
 
-                <div>
-                    LG
+                <div className="slider">
+                    <div className="slide-track">
+                        <div className="slide">
+                            <Image src="/assets/ufone-logo.webp" width={100} height={100} alt="" />
+                        </div>
+                        <div className="slide">
+                            <Image src="/assets/LGS-logo.webp" width={100} height={100} alt="" />
+                        </div>
+                        <div className="slide">
+                            <Image src="/assets/ecolean-logo.webp" width={200} height={100} alt="" />
+                        </div>
+
+                    </div>
                 </div>
 
             </section>
@@ -127,7 +141,7 @@ export default function Home() {
 
             <section className="booking">
                 <div className="image">
-                    <Image src="/assets/work-process.jpg" alt="Pakistan Tourism" width={"300"} height={"100"} />
+                    <Image src="/assets/work-process.jpg" alt="Pakistan Tourism" width={300} height={100} />
                 </div>
 
                 <div className="process">
@@ -186,45 +200,144 @@ export default function Home() {
                 </div>
                 <div className="images">
 
+                    {/* P1 */}
                     <div className="box">
                         <Image src="/assets/package1.jpg" alt="" fill />
                         <ul className="top">
                             <li>7 days</li>
-                            <li><i className="fa solid fa-star"></i>  4.9</li>
                         </ul>
                         <div className="bottom">
                             <time dateTime="2024-10-27">27 october</time>
                             <ul>
-                                <li>bali tour packages</li>
-                                <li>$285</li>
+                                <li>HUNZA</li>
+                                <li>PKR 50,000</li>
                             </ul>
                         </div>
                     </div>
+
+                    {/* P2 */}
                     <div className="box">
                         <Image src="/assets/package2.jpg" alt="" fill />
                         <ul className="top">
                             <li>5 days</li>
-                            <li><i className="fa solid fa-star"></i>  4.9</li>
+
                         </ul>
                         <div className="bottom">
                             <time dateTime="2024-10-27">27 october</time>
                             <ul>
-                                <li>java tour packages</li>
-                                <li>$192</li>
+                                <li>SKARDU</li>
+                                <li>PKR 50,000</li>
                             </ul>
                         </div>
                     </div>
+
+                    {/* P3 */}
                     <div className="box">
                         <Image src="/assets/package3.jpg" alt="" fill />
                         <ul className="top">
                             <li>3 days</li>
-                            <li><i className="fa solid fa-star"></i>  4.9</li>
+
                         </ul>
                         <div className="bottom">
                             <time dateTime="2024-10-27">27 october</time>
                             <ul>
-                                <li>solo tour packages</li>
-                                <li>$235</li>
+                                <li>FAIRY MEADOWS</li>
+                                <li>PKR 40,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P4 */}
+                    <div className="box">
+                        <Image src="/assets/package1.jpg" alt="" fill />
+                        <ul className="top">
+                            <li>7 days</li>
+                        </ul>
+                        <div className="bottom">
+                            <time dateTime="2024-10-27">27 october</time>
+                            <ul>
+                                <li>KASHMIR</li>
+                                <li>PKR 25,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P5 */}
+                    <div className="box">
+                        <Image src="/assets/package2.jpg" alt="" fill />
+                        <ul className="top">
+                            <li>5 days</li>
+
+                        </ul>
+                        <div className="bottom">
+                            <time dateTime="2024-10-27">27 october</time>
+                            <ul>
+                                <li>SWAT - KALAM</li>
+                                <li>PKR 30,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P6 */}
+                    <div className="box">
+                        <Image src="/assets/package3.jpg" alt="" fill />
+                        <ul className="top">
+                            <li>3 days</li>
+
+                        </ul>
+                        <div className="bottom">
+                            <time dateTime="2024-10-27">27 october</time>
+                            <ul>
+                                <li>PHANDER VALLEY</li>
+                                <li>PKR 90,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P7 */}
+                    <div className="box">
+                        <Image src="/assets/package3.jpg" alt="" fill />
+                        <ul className="top">
+                            <li>3 days</li>
+
+                        </ul>
+                        <div className="bottom">
+                            <time dateTime="2024-10-27">27 october</time>
+                            <ul>
+                                <li>GHIZER VALLEY</li>
+                                <li>PKR 100,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P8 */}
+                    <div className="box">
+                        <Image src="/assets/package3.jpg" alt="" fill />
+                        <ul className="top">
+                            <li>3 days</li>
+
+                        </ul>
+                        <div className="bottom">
+                            <time dateTime="2024-10-27">27 october</time>
+                            <ul>
+                                <li>CHITRAL</li>
+                                <li>PKR 45,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P9 */}
+                    <div className="box">
+                        <Image src="/assets/package3.jpg" alt="" fill />
+                        <ul className="top">
+                            <li>3 days</li>
+
+                        </ul>
+                        <div className="bottom">
+                            <time dateTime="2024-10-27">27 october</time>
+                            <ul>
+                                <li>BEACHES OF PAKISTAN</li>
+                                <li>PKR 110,000</li>
                             </ul>
                         </div>
                     </div>
@@ -276,7 +389,6 @@ export default function Home() {
                             <h4>Contact</h4>
                             <ul style={{ marginTop: "8px" }}>
                                 <li><a href="#"><FaWhatsapp /> +923499816568</a></li>
-                                <li><a href="#"><FaWhatsapp /> +923335300444</a></li>
                             </ul>
                         </li>
                         <li><Link href="/gallery">Gallery</Link></li>
