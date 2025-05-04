@@ -751,58 +751,96 @@ footer .links ul li a:hover {
     color: white;
 }
 
-footer .newsletter {
-    flex: 1 0 250px;
-    max-width: 55rem;
+
+footer .tripPlan{
+    padding: 20px;
+    width: 40%;
+    display: block;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 15px;
 }
 
-footer .newsletter p {
+footer .tripPlan .form{
+    margin-top: 20px;
+}
+
+footer .tripPlan p {
     color: var(--text-clr);
     font-size: 1.3rem;
     margin: 2rem 0;
 }
 
-footer .newsletter .email-box {
+footer .tripPlan .tripPlanForm .input-group{
     display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 50px;
-    border: 2px solid var(--text-clr);
-    border-radius: 3rem;
-    padding: .5rem;
+    align-self: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+   
 }
 
-footer .newsletter .email-box input {
+footer .tripPlan .tripPlanForm .input-group .icon{
+    margin-top: 10px;
+}
+
+footer .tripPlan .tripPlanForm input {
     width: 100%;
     padding: 1rem;
-    background: transparent;
+    background-color: #191515;
     border: none;
     outline: none;
     color: var(--white-clr);
     font-size: 1.3rem;
 }
 
-footer .newsletter .email-box input::placeholder {
+footer .tripPlanForm input::placeholder {
     color: var(--white-clr);
 }
 
-footer .newsletter .email-box button {
+/* Chrome/Safari - calendar icon color tweak using filter */
+footer .tripPlan .tripPlanForm input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(30%) sepia(80%) saturate(500%) hue-rotate(200deg);
+    cursor: pointer;
+}
+
+footer .tripPlanForm {
     padding: 0 2rem;
     border-radius: 3rem;
     border: none;
     outline: none;
-    background: var(--text-clr);
+   
     color: var(--white-clr);
     font-size: 1.3rem;
     cursor: pointer;
     transition: all .3s ease;
 }
 
-footer .newsletter .email-box button:hover {
-    color: var(--black-clr);
-    background: var(--white-clr);
+footer .tripPlanForm .enquirySubmit {
+    color: var(--white-clr);
+    background: var(--black-clr);
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid var(--white-clr);
+    width: 100%;
+    margin-top: 10px;
 }
 
-footer .newsletter .social-links {
+footer .social-links {
     width: 100%;
     margin-top: 4rem;
     display: flex;
@@ -810,7 +848,7 @@ footer .newsletter .social-links {
     gap: 1.5rem;
 }
 
-footer .newsletter .social-links li {
+footer .social-links li {
     list-style: none;
     width: 50px;
     height: 50px;
@@ -823,9 +861,9 @@ footer .newsletter .social-links li {
     transition: all .3s ease;
 }
 
-footer .newsletter .social-links li:hover {
+footer .social-links li:hover {
     border: 2px solid var(--white-clr);
-    background: linear-gradient(45deg, purple, dodgerblue);
+    background: linear-gradient(45deg, rgb(182, 124, 182), rgb(117, 142, 167));
     color: white;
 }
 
@@ -837,7 +875,7 @@ footer .newsletter .social-links li:hover {
     color: var(--white-clr);
 }
 
-footer .newsletter .social-links li i {
+footer .social-links li i {
     font-size: 1.6rem;
     /* color: var(--white-clr); */
     color: white;
@@ -942,6 +980,11 @@ footer .copright p {
         justify-content: center;
         align-items: center;
     }
+
+    footer .tripPlan{
+        
+        width: 100%;
+    }
 }
 
 @media (max-width: 706px) {
@@ -1007,6 +1050,11 @@ footer .copright p {
 
     footer {
         padding: 4rem;
+    }
+
+    footer .tripPlan{
+        
+        width: 100%;
     }
 
 }

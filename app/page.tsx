@@ -6,8 +6,14 @@ import {
     FaInstagram,
     FaYoutube,
     FaWhatsapp,
-    // FaPhoneAlt, 
-    FaEnvelope
+    FaTiktok,
+    FaUser,
+    FaEnvelope,
+    FaCheckCircle,
+    FaCalendarAlt,
+    FaPhoneAlt,
+    FaMountain,
+    FaCity
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 // import ScrollToBottom from "./components/ScrollToContact";
@@ -410,26 +416,73 @@ export default function Home() {
                         <li><a href="#">terms & condition</a></li>
                     </ul>
                 </div>
-                <div className="newsletter">
-                    <h4>newsletter</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas delectus expedita reiciendis illo soluta voluptatum.</p>
-                    <div className="email-box">
-                        <input type="text" placeholder="enter your email" />
-                        <button>submit</button>
+                <div className="tripPlan">
+                    <h4>Make Trip</h4>
+                    <p>Make your trip and we will send you the details</p>
+                    <div className="tripPlanForm">
+                        <form className="form">
+                            <div className="input-group">
+                                <FaUser className="icon" size={20} />
+                                <input type="text" placeholder="Name" autoComplete="off" />
+                            </div>
+
+                            <div className="input-group">
+                                <FaEnvelope className="icon" size={20} />
+                                <input type="email" placeholder="Email" autoComplete="off" />
+                            </div>
+
+                            <div className="input-group">
+                                <FaPhoneAlt className="icon" size={20} />
+                                <input type="text" placeholder="Phone No." autoComplete="off" />
+                            </div>
+
+                            <div className="input-group">
+                                <FaCalendarAlt className="icon" size={20} />
+                                <input type="date" />
+                            </div>
+
+                            <div className="input-group">
+                                <FaMountain className="icon" size={20} />
+                                <input type="text" placeholder="Destination" autoComplete="off" />
+                            </div>
+
+                            <div className="input-group">
+                                <FaCity className="icon" size={20} />
+                                <input type="text" placeholder="Departure City" autoComplete="off" />
+                            </div>
+
+
+                            <button type="submit" className="enquirySubmit">Send</button>
+
+                        </form>
+                        <p><FaCheckCircle color="green" /> This data is only shared within our company</p>
+                        <p><FaCheckCircle color="green" /> Your privacy is safe with us</p>
+
                     </div>
-                    <ul className="social-links">
-                        <li>
-                            <a
-                                target="_blank"
-                                href="https://www.instagram.com/concordia_expeditions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                                <FaInstagram className="social-icons" />
-                            </a>
-                        </li>
-                        <li><FaFacebook className="social-icons" /></li>
-                        <li><FaYoutube className="social-icons" /></li>
-                        <li><FaXTwitter className="social-icons" /></li>
-                    </ul>
+
                 </div>
+
+                <ul className="social-links">
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://www.instagram.com/concordia_expeditions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                            <FaInstagram className="social-icons" />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://www.tiktok.com/@concordia.expedit?_t=ZS-8w4cexGGByq&_r=1"
+                        >
+                            <FaTiktok className="social-icons" />
+                        </a>
+                    </li>
+                    <li><FaFacebook className="social-icons" /></li>
+                    <li><FaYoutube className="social-icons" /></li>
+                    <li><FaXTwitter className="social-icons" /></li>
+                </ul>
+
             </footer>
 
         </div>
