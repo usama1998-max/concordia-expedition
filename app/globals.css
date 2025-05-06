@@ -897,6 +897,7 @@ body {
 
 .FAQ .faqSection .faqBtn p{
     padding-left: 10px;
+    text-align: left;
 }
 
 .FAQ .faqSection .faqBtn .icon{
@@ -1207,6 +1208,18 @@ footer .copright p {
         gap: 2rem;
     }
 
+    .FAQ .faqSection .faqBtn{
+        height: 50px;
+    }
+
+    .FAQ .faqSection .faqBtn p{
+        padding-bottom: 10px;
+    }
+
+    .FAQ .faqSection{
+        width: 100%;
+    }
+
     footer {
         padding: 4rem;
     }
@@ -1373,6 +1386,18 @@ footer .copright p {
     }
 
     .makeTripBtn button{
+        width: 100%;
+    }
+
+    .FAQ .faqSection .faqBtn{
+        height: 60px;
+    }
+
+    .FAQ .faqSection .faqBtn p{
+        padding-bottom: 10px;
+    }
+
+    .FAQ .faqSection{
         width: 100%;
     }
     
