@@ -5,43 +5,27 @@ import { FiPlus, FiMinus } from 'react-icons/fi';
 
 const faqData = [
     {
-        question: 'What is Next.js?',
+        question: 'Does concordia expedition offer group tours?',
         answerDivs: [
-            'Next.js is a React framework.',
-            'It supports server-side rendering.',
-            'It improves SEO for React apps.',
-            'It has built-in routing.',
-            'It supports API routes.',
+            'Yes concordia expedition offers all types of tours such as group, couple, single or expedition tour',
+        ]
+    },
+    {
+        question: 'Do I get a refund if i plan to cancel my trip?',
+        answerDivs: [
+            'Yes you will get a refund if you cancel your trip 3 days before the trip'
         ],
     },
     {
-        question: 'How does SSR work in Next.js?',
+        question: 'Do I have to bring camping and tekking gears',
         answerDivs: [
-            'SSR stands for Server-Side Rendering.',
-            'Next.js fetches data on the server before rendering.',
-            'It sends the full HTML to the client.',
-            'Improves initial load performance.',
-            'Ideal for dynamic content and SEO.',
+            'Yes you have to bring your own trekking gears. We wil lprovide some of the things like camps and mules'
         ],
     },
     {
-        question: 'What is Next.js?',
+        question: 'Are my pictures safe?',
         answerDivs: [
-            'Next.js is a React framework.',
-            'It supports server-side rendering.',
-            'It improves SEO for React apps.',
-            'It has built-in routing.',
-            'It supports API routes.',
-        ],
-    },
-    {
-        question: 'What is Next.js?',
-        answerDivs: [
-            'Next.js is a React framework.',
-            'It supports server-side rendering.',
-            'It improves SEO for React apps.',
-            'It has built-in routing.',
-            'It supports API routes.',
+            'Yes all your data is safe with us. We do not share this data outside company.'
         ],
     }
     // Add more questions if needed

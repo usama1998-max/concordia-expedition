@@ -81,8 +81,10 @@ const PlanTripForm = () => {
                                 <input type="number" placeholder="Number of People" autoComplete="off" />
                             </div>
 
+
                         </form>
-                        <button type="submit" className="enquirySubmit">Send</button>
+                        <button type="submit" className="enquirySubmit" onClick={closeTripFormPopover}>Send</button>
+
                         <p><FaCheckCircle color="green" /> This data is only shared within our company</p>
                         <p><FaCheckCircle color="green" /> Your privacy is safe with us</p>
 

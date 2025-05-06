@@ -89,6 +89,9 @@ export default function Home() {
                         <div className="slide">
                             <Image src="/assets/ecolean-logo.webp" width={200} height={100} alt="" />
                         </div>
+                        <div className="slide">
+                            <Image src="/assets/stockrom-logo.webp" width={200} height={100} alt="" />
+                        </div>
 
                     </div>
                 </div>

@@ -119,6 +119,7 @@ body {
 .tripPlan{
     padding: 20px;
     width: 80%;
+    height: 130vh;
     display: block;
     left: 0;
     right: 0;
@@ -139,6 +140,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     height: 80vh;
+    color: var(--white-clr);
+    font-size: 1.3rem;
 }
 
 .tripPlan h4 {
@@ -192,33 +195,40 @@ body {
     cursor: pointer;
 }
 
-.tripPlanForm {
+/* .tripPlanForm {
+    height: 70vh;
     padding: 0 2rem;
     border-radius: 3rem;
     border: none;
     outline: none;
-   
+    border: 1px solid wheat;
     color: var(--white-clr);
     font-size: 1.3rem;
     cursor: pointer;
-    transition: all .3s ease;
-}
+} */
 
 .tripPlanForm .enquirySubmit {
     color: var(--white-clr);
-    background: var(--black-clr);
-    padding: 10px;
+    background: var(--black-clr); 
     border-radius: 15px;
     cursor: pointer;
     position: relative;
     display: block;
     left: 0;
     right: 0;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid var(--white-clr);
     width: 30%;
-    margin-top: 20px;
+    
+}
+
+.tripPlanForm .enquirySubmit:active {
+    color: var(--black-clr);
+    background: var(--white-clr); 
 }
 
 /* ------------------------- trip plan popover section ends here ---------------- */
