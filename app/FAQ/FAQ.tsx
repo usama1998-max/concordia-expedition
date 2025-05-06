@@ -57,28 +57,18 @@ const FAQ = () => {
     };
 
     return (
-        <div style={{
+        <div className="FAQ" style={{
             display: "block",
             // border: "1px solid black"
         }}>
 
             {faqData.map((faq, index) => (
-                <div key={index} style={{ margin: "10px" }}>
+                <div className='faqSection' key={index}>
                     <button
                         onClick={() => toggle(index)}
-                        style={{
-                            width: "100%",
-                            height: "50px",
-                            background: "#f8f8fa",
-                            color: "black",
-                            fontSize: "1.9rem",
-                            borderRadius: "15px",
-                            border: "none",
-                            boxShadow: "0 2px 15px rgb(0 0 0 / 20%)",
-                            marginTop: "10px"
-                        }}
+                        className='faqBtn'
                     >
-                        {btnIndex == index ? <FiMinus /> : <FiPlus />}  {faq.question}
+                        <p>{faq.question}</p> <div>{btnIndex == index ? <FiMinus className='icon' /> : <FiPlus className='icon' />}</div>
                     </button>
                     {openIndex === index && (
                         <div style={{
