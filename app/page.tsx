@@ -7,16 +7,11 @@ import {
     FaYoutube,
     FaWhatsapp,
     FaTiktok,
-    FaUser,
     FaEnvelope,
-    FaCheckCircle,
-    FaCalendarAlt,
-    FaPhoneAlt,
-    FaMountain,
-    FaCity
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 // import ScrollToBottom from "./components/ScrollToContact";
+import PlanTripForm from "./tripPlan/PlanTripForm";
 import FAQ from './FAQ/FAQ';
 import SlideUpText from './textSlide/textSlide';
 
@@ -74,10 +69,12 @@ export default function Home() {
                 </div>
             </section>
 
+            <PlanTripForm />
+
             <section className="clients">
 
                 <div className="heading-box">
-                    <h2 className="heading">Our subsidiaries</h2>
+                    <h2 className="heading">Our Corporate Clients</h2>
 
                 </div>
 
@@ -359,7 +356,7 @@ export default function Home() {
             </section>
 
 
-            <section className="blog">
+            {/* <section className="blog">
                 <h6 className="label">our blog</h6>
                 <h1 className="heading">our travel memories</h1>
                 <div className="container">
@@ -380,7 +377,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="faq">
                 <h6 className="label">Have any question</h6>
@@ -416,51 +413,7 @@ export default function Home() {
                         <li><a href="#">terms & condition</a></li>
                     </ul>
                 </div>
-                <div className="tripPlan">
-                    <h4>Make Trip</h4>
-                    <p>Make your trip and we will send you the details</p>
-                    <div className="tripPlanForm">
-                        <form className="form">
-                            <div className="input-group">
-                                <FaUser className="icon" size={20} />
-                                <input type="text" placeholder="Name" autoComplete="off" />
-                            </div>
 
-                            <div className="input-group">
-                                <FaEnvelope className="icon" size={20} />
-                                <input type="email" placeholder="Email" autoComplete="off" />
-                            </div>
-
-                            <div className="input-group">
-                                <FaPhoneAlt className="icon" size={20} />
-                                <input type="text" placeholder="Phone No." autoComplete="off" />
-                            </div>
-
-                            <div className="input-group">
-                                <FaCalendarAlt className="icon" size={20} />
-                                <input type="date" />
-                            </div>
-
-                            <div className="input-group">
-                                <FaMountain className="icon" size={20} />
-                                <input type="text" placeholder="Destination" autoComplete="off" />
-                            </div>
-
-                            <div className="input-group">
-                                <FaCity className="icon" size={20} />
-                                <input type="text" placeholder="Departure City" autoComplete="off" />
-                            </div>
-
-
-                            <button type="submit" className="enquirySubmit">Send</button>
-
-                        </form>
-                        <p><FaCheckCircle color="green" /> This data is only shared within our company</p>
-                        <p><FaCheckCircle color="green" /> Your privacy is safe with us</p>
-
-                    </div>
-
-                </div>
 
                 <ul className="social-links">
                     <li>
