@@ -22,7 +22,8 @@ const PlanTripForm = () => {
     return (
         <>
             <section className="makeTripBtn">
-                <button type="button" onClick={openTripFormPopover}>Click here to plan trip</button>
+                <h1>Click Here</h1>
+                <button type="button" onClick={openTripFormPopover}>plan my tour</button>
             </section>
 
             <div className="tripPlanOverlay" style={{

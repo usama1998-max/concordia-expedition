@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
     margin: 0;padding: 0;
@@ -12,6 +12,8 @@
     --white-clr: #fff;
     --black-clr: #000;
     --text-clr: #777;
+    --primary-clr: #072451;
+    --secondary-clr: #FBD024;
 }
 
 html, body {
@@ -69,12 +71,21 @@ body {
     margin-bottom: 30px;
     margin-top: -100px;
     /* border: 1px solid black; */
+    text-align: center;
+    align-items: center;
 
 }
 
+.makeTripBtn h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #072451;
+}
+
 .makeTripBtn button{
-    background-color: #000;
-    color: #f2f7ff;
+    background-color: #072451;
+    color: #FBD024;
     padding: 20px;
     width: 30%;
     position: relative;
@@ -84,13 +95,15 @@ body {
     display: block;
     border-radius: 20px;
     text-align: center;
-    font-weight: 700;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     font-size: 20px;
 }
 
 .makeTripBtn button:hover{
-    background-color: #fff;
-    color: #000;
+    background-color: #FBD024;
+    color: #072451;
     border: 2px solid #000;
 }
 
@@ -236,20 +249,21 @@ body {
 /* ------------------------- contact header section starts here ---------------- */
 
 .contactHeader{
-    background-color: #000;
-    color: #f2f7ff;
+    background-color: #072451;
+    color: #FBD024;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     height: 60px;
     padding: 10px;
     padding-bottom: 10px;
+    padding-top: 20px;
 }
 
-.contactHeader > a{
+.contactHeader a{
     font-size: 1.7rem;
     text-decoration: none;
-    color: #f8f8fa;
+    color: #FBD024;
     text-transform: lowercase;
 }
 
@@ -278,9 +292,9 @@ body {
 .loader {
     width: 100%;
     color: rgb(255, 255, 255);
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 50px;
+    /* font-family: "Poppins", sans-serif;
+    font-weight: 500; */
+    /* font-size: 50px; */
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     height: 50px;
@@ -292,11 +306,15 @@ body {
     border-radius: 8px;
 }
 
-.loader > h1{
+.loader h1{
     color: rgb(255, 255, 255);
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 100px;
+
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    font-size: 20px;
+    
     position: relative;
     align-self: center;
     margin-left: auto;
@@ -338,7 +356,8 @@ body {
     display: block;
     height: 100px;
     padding-left: 10px;
-    color: #ffffff;
+    color: #FBD024;
+    font-size: 50px;
     animation: spin_4991 7s infinite;
 }
   
@@ -390,7 +409,7 @@ body {
     height: 100%;
     min-height: 100vh;
     padding: 2rem;
-    background: linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)), url(/assets/home.jpg);
+    background: linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)), url(/assets/home/home.jpg); /* /assets/home.jpg */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -558,7 +577,7 @@ body {
     display: flex;
     flex-direction: column;
     /* border: 1px solid black; */
-    margin-top: -80px;
+    margin-top: -10px;
 
 }
 
@@ -577,6 +596,12 @@ body {
     margin-right: auto;
     left: 0;
     right: 0;
+}
+
+.clients .heading-box .heading{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 /* .slide > img {
@@ -603,6 +628,12 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 4rem;
+}
+
+.location .responsive-text .heading-box .heading{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .responsive-text .text-box {
@@ -730,6 +761,12 @@ body {
 
 /* packages section starts here  */
 
+.packages .heading-box .heading{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
 .packages .images {
     margin-top: 4rem;
     width: 100%;
@@ -787,10 +824,26 @@ body {
     padding: 1rem;
 }
 
-.packages .images .box .bottom time {
+
+.packages .images .box .bottom .bottomHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #f2f7ff;
+} 
+
+.packages .images .box .bottom .bottomHeader .destination {
     color: #ddd;
     font-size: 1.2rem;
     text-transform: uppercase;
+}
+
+.packages .images .box .bottom .bottomHeader .startFromPrice {
+    color: #ddd;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: right;
+    align-self: self-end;
 }
 
 .packages .images .box .bottom ul {
@@ -880,6 +933,12 @@ body {
 
 /* -------------- FAQs section starts here --------------  */
 
+.faq .heading{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
 .FAQ .faqSection{
     margin: 10px;
     width: 70%;
@@ -926,7 +985,8 @@ footer {
     margin-top: 5rem;
     padding: 4rem 10rem;
     padding-top: 10rem;
-    background: #191515;
+    background: var(--primary-clr);
+    color: var(--secondary-clr);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -949,7 +1009,7 @@ footer .links ul {
 
 footer h4 {
     font-size: 1.8rem;
-    color: var(--white-clr);
+    color: var(--secondary-clr);
     font-weight: 600;
 }
 
@@ -977,10 +1037,12 @@ footer .social-links {
 
 footer .social-links li {
     list-style: none;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    padding-top: 5px;
     border-radius: 50%;
     background: var(--text-clr);
+    color: var(--secondary-clr);
     display: grid;
     place-items: center;
     cursor: pointer;
@@ -990,12 +1052,13 @@ footer .social-links li {
 
 footer .social-links li:hover {
     border: 2px solid var(--white-clr);
-    background: linear-gradient(45deg, rgb(182, 124, 182), rgb(117, 142, 167));
+    background: linear-gradient(45deg, var(--primary-clr), var(--secondary-clr));
     color: white;
 }
 
 .social-icons {
-    color: var(--black-clr);
+    color: var(--secondary-clr);
+    
 }
 
 .social-icons:hover {
@@ -1026,16 +1089,75 @@ footer .copright p {
 
 /* ----------------------- media query section starts hare --------------------- */
 
-@media (max-width: 1065px) {
+
+@media (max-width: 1080px) {
+    
+    .home .main .card .loader h1{
+        font-size: 70px;
+    }
+
+    .home .main .card .loader .words .word{
+        font-size: 40px;
+    }
+
+    .card{
+     margin-top: 15%;
+    }
+ 
+    .achivment{
+     transform: translate(0, -30%);
+    }
+    
+    .slide-track {
+        border: 1px solid black;
+        width: 100%;
+    }
+ 
+    .heading {
+     white-space: wrap;
+    }
+ }
+
+@media (max-width: 1069px) {
    .card{
     margin-top: 15%;
    }
 
+   .achivment{
+    transform: translate(0, -30%);
+   }
+
+   .achivment .box img{
+        width: 60px;
+        height: 60px;
+    }
 
    .heading {
     white-space: wrap;
    }
 }
+
+@media (max-width: 920px) {
+    .achivment {
+       
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: 0;
+        right: 0;
+        transform: translate(0, -50%);
+    }
+
+    .achivment .box img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
 
 @media (max-width: 900px) {
     html {
@@ -1044,6 +1166,10 @@ footer .copright p {
 
     .booking {
         flex-direction: column;
+    }
+
+    .home .main .card .loader h1 {
+        font-size: 55px;
     }
 
     .makeTripBtn{
@@ -1100,19 +1226,25 @@ footer .copright p {
         padding-bottom: 10px;
     }
 
-    .words{
-        font-size: 30px;
+    .home .main .card .loader .words .word{
+        font-size: 20px;
     }
 
-    .home .main h1 {
-        font-size: 6rem;
+    .home header{
+        margin-top: 20%;
+    }
+
+    .home .main .card .loader h1 {
+        font-size: 35px;
+        word-spacing: 20px;
+        margin-top: 50%;
     }
 
     .achivment {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        transform: translate(0, 20px);
+        transform: translate(0, -30%);
         position: relative;
         margin-bottom: 50px;
     }
@@ -1192,7 +1324,7 @@ footer .copright p {
         right: 4rem;
     }
 
-    .home header nav.active {
+    .home header nav .active {
         transform: translate(0, 0);
     }
 
@@ -1202,6 +1334,10 @@ footer .copright p {
 
     .home .main .search ul li i:last-child {
         margin-left: 1rem;
+    }
+
+    .home .main h1 {
+        font-size: 40px;
     }
 
     .achivment {
@@ -1248,6 +1384,18 @@ footer .copright p {
         padding-bottom: 10px;
     }
 
+    .home .main .card .loader h1{
+        margin-top: 60%;
+    }
+
+    .home .main .card .loader .words .word{
+        font-size: 20px;
+    }
+
+    .home header{
+        margin-top: 1%;
+    }
+
     .card{
         margin-top: -180px;
     }
@@ -1267,7 +1415,6 @@ footer .copright p {
     .home header .logo{
       width: 200px;
       height: 200px;
-      margin-top: 50px;
       margin-left: auto;
       margin-right: auto;
       display: block;
@@ -1285,27 +1432,85 @@ footer .copright p {
       /* border: 2px solid red; */
     }
 
-    .home .main {
-      margin-top: 150px;
+    
+    
+    .tripPlanForm{
+        height: 120vh;    
     }
 
-    .heading {
-        font-size: 4rem;
+    .tripPlan{
+        width: 95%;
+        
     }
 
-    .home .main h1 {
-        font-size: 3.3rem;
-        letter-spacing: 0;
+    .tripPlan p{
+        margin-top: 30px;
+    }
+    
+    .makeTripBtn h1{
+        margin-top: -10%;
     }
 
-    .home .main .search {
-        position: relative;
+    .makeTripBtn button{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 530px) {
+
+    .home .main .card .loader h1{
+        margin-top: 65%;
     }
 
-    .home .main .search button {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 140%);
+    .home .main .card .loader .words .word{
+        font-size: 20px;
+    }
+
+    .home header{
+        margin-top: 1%;
+    }
+
+    .card{
+        margin-top: -180px;
+    }
+
+    .words{
+        font-size: 20px;
+    }
+
+
+    .home{
+      width: 100%;
+      height: 200px;
+      min-height: 70vh;
+      padding: 20px;
+    }
+
+    .home header .logo{
+      width: 200px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .logo{
+        height: 200px;
+    }
+
+    header{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      
+      /* border: 2px solid red; */
+    }
+
+    .achivment{
+        transform: translate(0, 5%);
+        flex-wrap: wrap;
     }
     
     .tripPlanForm{
@@ -1320,6 +1525,10 @@ footer .copright p {
     .tripPlan p{
         margin-top: 30px;
     }
+    
+    .makeTripBtn h1{
+        margin-top: -10%;
+    }
 
     .makeTripBtn button{
         width: 80%;
@@ -1327,8 +1536,253 @@ footer .copright p {
     }
 }
 
+@media (max-width: 460px) {
 
-@media (max-width: 380px) {
+    .home .main .card .loader h1{
+        margin-top: 80%;
+        font-size: 30px;
+    }
+
+    .home .main .card .loader .words .word{
+        font-size: 20px;
+    }
+
+    .home header{
+        margin-top: 1%;
+    }
+
+    .card{
+        margin-top: -180px;
+    }
+
+    .words{
+        font-size: 20px;
+    }
+
+
+    .home{
+      width: 100%;
+      height: 200px;
+      min-height: 70vh;
+      padding: 20px;
+    }
+
+    .home header .logo{
+      width: 200px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .logo{
+        height: 200px;
+    }
+
+    header{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      
+      /* border: 2px solid red; */
+    }
+
+    
+    
+    .tripPlanForm{
+        height: 120vh;    
+    }
+
+    .tripPlan{
+        width: 95%;
+        
+    }
+
+    .tripPlan p{
+        margin-top: 30px;
+    }
+    
+    .makeTripBtn h1{
+        margin-top: -10%;
+    }
+
+    .makeTripBtn button{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .home .main .card .loader h1{
+        margin-top: 90%;
+        font-size: 25px;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+    }
+
+    .home .main .card .loader .words .word{
+        font-size: 20px;
+    }
+
+    .home header{
+        margin-top: 1%;
+    }
+
+    .card{
+        margin-top: -180px;
+    }
+
+    .words{
+        font-size: 20px;
+    }
+
+
+    .home{
+      width: 100%;
+      height: 200px;
+      min-height: 70vh;
+      padding: 20px;
+    }
+
+    .home header .logo{
+      width: 200px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .logo{
+        height: 200px;
+    }
+
+    header{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      
+      /* border: 2px solid red; */
+    }
+
+    .tripPlanForm{
+        height: 150vh;    
+    }
+
+    .tripPlan{
+        width: 95%;
+        height: 140vh;
+        
+    }
+
+    .tripPlan p{
+        margin-top: 30px;
+    }
+    
+    .makeTripBtn h1{
+        margin-top: -10%;
+    }
+
+    .makeTripBtn button{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .achivment{
+        transform: translate(0, 5%);
+    }
+}
+
+
+@media (max-width: 410px) {
+
+    .home .main .card .loader h1{
+        margin-top: 90%;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .home .main .card .loader .words .word{
+        font-size: 20px;
+    }
+
+    .home header{
+        margin-top: 1%;
+    }
+
+    .card{
+        margin-top: -180px;
+    }
+
+    .words{
+        font-size: 20px;
+    }
+
+
+    .home{
+      width: 100%;
+      height: 200px;
+      min-height: 70vh;
+      padding: 20px;
+    }
+
+    .home header .logo{
+      width: 200px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .logo{
+        height: 200px;
+    }
+
+    header{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      
+      /* border: 2px solid red; */
+    }
+
+    .achivment .box img{
+        width: 100px;
+        height: 100px;
+    }
+
+    /* .achivment{
+        flex-direction: column;
+    } */
+
+    .tripPlanForm{
+        height: 150vh;    
+    }
+
+    .tripPlan{
+        width: 95%;
+        height: 140vh;
+        
+    }
+
+    .tripPlan p{
+        margin-top: 30px;
+    }
+    
+    .makeTripBtn h1{
+        margin-top: -40%;
+    }
+
+    .makeTripBtn button{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+
+    
+}
+
+@media (max-width: 400px) {
     .contactHeader{
         flex-direction: column;
         height: 150px;
@@ -1340,7 +1794,7 @@ footer .copright p {
     }
 
     .words{
-        font-size: 20px;
+        font-size: 5px;
     }
 
 
@@ -1393,6 +1847,155 @@ footer .copright p {
         position: absolute;
         left: 50%;
         transform: translate(-50%, 140%);
+    }
+
+    .makeTripBtn button{
+        width: 100%;
+    }
+
+    .FAQ .faqSection .faqBtn{
+        height: 60px;
+    }
+
+    .FAQ .faqSection .faqBtn p{
+        padding-bottom: 10px;
+    }
+
+    .FAQ .faqSection{
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 400px) {
+    .card{
+        margin-top: -400px;
+    }
+
+    .words{
+        font-size: 5px;
+    }
+
+
+    .home{
+      width: 100%;
+      height: 200px;
+      min-height: 70vh;
+      padding: 20px;
+    }
+
+    .home header .logo{
+      width: 200px;
+      height: 200px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .logo{
+        height: 200px;
+    }
+
+    header{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      
+      /* border: 2px solid red; */
+    }
+
+    .home .main {
+      margin-top: 150px;
+    }
+
+    .heading {
+        font-size: 4rem;
+    }
+
+    .home .main h1 {
+        font-size: 3.3rem;
+        letter-spacing: 0;
+    }
+
+    .makeTripBtn h1{
+        margin-top: 0;
+    }
+
+    .makeTripBtn button{
+        width: 100%;
+    }
+
+    .FAQ .faqSection .faqBtn{
+        height: 60px;
+    }
+
+    .FAQ .faqSection .faqBtn p{
+        padding-bottom: 10px;
+    }
+
+    .FAQ .faqSection{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 350px) {
+
+    .card{
+        margin-top: -350px;
+    }
+
+    .words{
+        font-size: 5px;
+        width: 100%;
+    }
+
+
+    .home{
+      width: 100%;
+      height: 200px;
+      min-height: 70vh;
+      padding: 20px;
+    }
+
+    .home header .logo{
+      width: 200px;
+      height: 200px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .logo{
+        height: 200px;
+    }
+
+    header{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      
+      /* border: 2px solid red; */
+    }
+
+    .home .main {
+      margin-top: 150px;
+    }
+
+    .heading {
+        font-size: 4rem;
+    }
+
+    .home .main h1 {
+        font-size: 3.3rem;
+        letter-spacing: 0;
+    }
+
+    .makeTripBtn h1{
+        margin-top: 0;
     }
 
     .makeTripBtn button{

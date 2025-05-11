@@ -21,8 +21,6 @@ export default function Home() {
     return (
         <div>
             <section className="contactHeader">
-                <h1>Contact: </h1>
-
                 <a target="_blank" href="https://wa.me/+923499816568"><FaWhatsapp size={20} /> +923499816568</a>
                 <a target="_blank" href="https://wa.me/+923415848526"><FaWhatsapp size={20} /> +923415848526</a>
                 <a target="_blank" href="mailto:concordiaexpeditions@gmail.com"><FaEnvelope size={20} /> concordiaexpeditions@gmail.com</a>
@@ -71,10 +69,206 @@ export default function Home() {
 
             <PlanTripForm />
 
+            <section className="packages">
+                <div className="responsive-text">
+                    <div className="heading-box">
+                        <h6 className="label">Concordia Expeditions</h6>
+                        <h2 className="heading">our tourist destination</h2>
+                    </div>
+                    {/* <div className="text-box">
+                        <p>Experience the most iconic and breathtaking destinations Pakistan has to offer.</p>
+                    </div> */}
+                </div>
+                <div className="images">
+
+                    {/* P1 */}
+                    <div className="box">
+                        <Image src="/assets/package1.jpg" alt="" fill />
+                        {/* <ul className="top">
+                            <li>7 days</li>
+                        </ul> */}
+                        <div className="bottom">
+                            <div className="bottomHeader">
+                                <p className="destination">Destination</p>
+                                <p className="startFromPrice">Starting Price per person</p>
+                            </div>
+
+                            {/* <time dateTime="2024-10-27">27 october</time> */}
+                            <ul>
+                                <li>HUNZA</li>
+                                <li>PKR 50,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P2 */}
+                    <div className="box">
+                        <Image src="/assets/package2.jpg" alt="" fill />
+                        {/* <ul className="top">
+                            <li>5 days</li>
+
+                        </ul> */}
+                        <div className="bottom">
+                            <div className="bottomHeader">
+                                <p className="destination">Destination</p>
+                                <p className="startFromPrice">Starting Price per person</p>
+                            </div>
+                            {/* <time dateTime="2024-10-27">27 october</time> */}
+                            <ul>
+                                <li>SKARDU</li>
+                                <li>PKR 50,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P3 */}
+                    <div className="box">
+                        <Image src="/assets/package3.jpg" alt="" fill />
+                        {/* <ul className="top">
+                            <li>3 days</li>
+
+                        </ul> */}
+                        <div className="bottom">
+                            <div className="bottomHeader">
+                                <p className="destination">Destination</p>
+                                <p className="startFromPrice">Starting Price per person</p>
+                            </div>
+                            {/* <time dateTime="2024-10-27">27 october</time> */}
+                            <ul>
+                                <li>FAIRY MEADOWS</li>
+                                <li>PKR 40,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P4 */}
+                    <div className="box">
+                        <Image src="/assets/package1.jpg" alt="" fill />
+                        {/* <ul className="top">
+                            <li>7 days</li>
+                        </ul> */}
+                        <div className="bottom">
+                            <div className="bottomHeader">
+                                <p className="destination">Destination</p>
+                                <p className="startFromPrice">Starting Price per person</p>
+                            </div>
+                            {/* <time dateTime="2024-10-27">27 october</time> */}
+                            <ul>
+                                <li>KASHMIR</li>
+                                <li>PKR 25,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P5 */}
+                    <div className="box">
+                        <Image src="/assets/package2.jpg" alt="" fill />
+                        {/* <ul className="top">
+                            <li>5 days</li>
+
+                        </ul> */}
+                        <div className="bottom">
+                            <div className="bottomHeader">
+                                <p className="destination">Destination</p>
+                                <p className="startFromPrice">Starting Price per person</p>
+                            </div>
+                            {/* <time dateTime="2024-10-27">27 october</time> */}
+                            <ul>
+                                <li>SWAT - KALAM</li>
+                                <li>PKR 30,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P6 */}
+                    <div className="box">
+                        <Image src="/assets/package3.jpg" alt="" fill />
+                        {/* <ul className="top">
+                            <li>3 days</li>
+
+                        </ul> */}
+                        <div className="bottom">
+                            <div className="bottomHeader">
+                                <p className="destination">Destination</p>
+                                <p className="startFromPrice">Starting Price per person</p>
+                            </div>
+                            {/* <time dateTime="2024-10-27">27 october</time> */}
+                            <ul>
+                                <li>PHANDER VALLEY</li>
+                                <li>PKR 90,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P7 */}
+                    <div className="box">
+                        <Image src="/assets/package3.jpg" alt="" fill />
+                        {/* <ul className="top">
+                            <li>3 days</li>
+
+                        </ul> */}
+
+                        <div className="bottom">
+                            <div className="bottomHeader">
+                                <p className="destination">Destination</p>
+                                <p className="startFromPrice">Starting Price per person</p>
+                            </div>
+                            {/* <time dateTime="2024-10-27">27 october</time> */}
+                            <ul>
+                                <li>GHIZER VALLEY</li>
+                                <li>PKR 100,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P8 */}
+                    <div className="box">
+                        <Image src="/assets/package3.jpg" alt="" fill />
+                        {/* <ul className="top">
+                            <li>3 days</li>
+
+                        </ul> */}
+                        <div className="bottom">
+                            <div className="bottomHeader">
+                                <p className="destination">Destination</p>
+                                <p className="startFromPrice">Starting Price per person</p>
+                            </div>
+                            {/* <time dateTime="2024-10-27">27 october</time> */}
+                            <ul>
+                                <li>CHITRAL</li>
+                                <li>PKR 45,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* P9 */}
+                    <div className="box">
+                        <Image src="/assets/packages/package9.webp" alt="balochistan beaches" fill />
+                        {/* <ul className="top">
+                            <li>3 days</li>
+
+                        </ul> */}
+                        <div className="bottom">
+                            <div className="bottomHeader">
+                                <p className="destination">Destination</p>
+                                <p className="startFromPrice">Starting Price per person</p>
+                            </div>
+                            {/* <time dateTime="2024-10-27">27 october</time> */}
+                            <ul>
+                                <li>BEACHES OF PAKISTAN</li>
+                                <li>PKR 110,000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
             <section className="clients">
 
                 <div className="heading-box">
-                    <h2 className="heading">Our Corporate Clients</h2>
+                    <h6 className="label">Concordia Expeditions</h6>
+                    <h2 className="heading">Corporate Clients</h2>
 
                 </div>
 
@@ -90,7 +284,7 @@ export default function Home() {
                             <Image src="/assets/ecolean-logo.webp" width={200} height={100} alt="" />
                         </div>
                         <div className="slide">
-                            <Image src="/assets/stockrom-logo.webp" width={200} height={100} alt="" />
+                            <Image src="/assets/stockrom-logo.webp" width={150} height={100} alt="" />
                         </div>
 
                     </div>
@@ -103,45 +297,50 @@ export default function Home() {
 
                 <div className="responsive-text">
                     <div className="heading-box">
-                        <h6 className="label">best location</h6>
-                        <h2 className="heading">Pakistan Tourism</h2>
+                        <h6 className="label">Concordia Expeditions</h6>
+                        <h2 className="heading">Travel Memories</h2>
                     </div>
-                    <div className="text-box">
+                    {/* <div className="text-box">
                         <p>Experience the unmatched natural wonders and cultural treasures of Pakistan.</p>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="images">
                     <div className="box">
-                        <Image src="/assets/location1.jpg" alt="" width={"500"} height={"500"} />
+                        {/* /assets/location1.jpg */}
+                        <Image src="" alt="" width={"500"} height={"500"} />
                         <ul>
                             <li>bromo, east java</li>
                             <li>bromo tengger tour</li>
                         </ul>
                     </div>
                     <div className="box">
-                        <Image src="/assets/location2.jpg" alt="" width={"500"} height={"500"} />
+                        {/* /assets/location2.jpg */}
+                        <Image src="" alt="" width={"500"} height={"500"} />
                         <ul>
                             <li>denpasar, bali</li>
                             <li>bali beacj tourism</li>
                         </ul>
                     </div>
                     <div className="box">
-                        <Image src="/assets/location4.jpg" alt="" width={"500"} height={"500"} />
+                        {/* /assets/location4.jpg */}
+                        <Image src="" alt="" width={"500"} height={"500"} />
                         <ul>
                             <li>lampung, south sumatra</li>
                             <li>sumatra tourism</li>
                         </ul>
                     </div>
                     <div className="box">
-                        <Image src="/assets/location3.jpg" alt="" width={"300"} height={"500"} />
+                        {/* /assets/location3.jpg */}
+                        <Image src="" alt="" width={"300"} height={"500"} />
                         <ul>
                             <li>jogjakarta, central java</li>
                             <li>borobudur temple tour</li>
                         </ul>
                     </div>
                     <div className="box">
-                        <Image src="/assets/location5.jpg" alt="" width={"300"} height={"500"} />
+                        {/* /assets/location5.jpg */}
+                        <Image src="" alt="" width={"300"} height={"500"} />
                         <ul>
                             <li>jogjakarta, central java</li>
                             <li>borobudur temple tour</li>
@@ -152,7 +351,7 @@ export default function Home() {
             </section>
 
 
-            <section className="booking">
+            {/* <section className="booking">
                 <div className="image">
                     <Image src="/assets/work-process.jpg" alt="Pakistan Tourism" width={300} height={100} />
                 </div>
@@ -198,165 +397,10 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
-            <section className="packages">
-                <div className="responsive-text">
-                    <div className="heading-box">
-                        <h6 className="label">tour packages</h6>
-                        <h2 className="heading">our tourist destination</h2>
-                    </div>
-                    <div className="text-box">
-                        <p>Experience the most iconic and breathtaking destinations Pakistan has to offer.</p>
-                    </div>
-                </div>
-                <div className="images">
 
-                    {/* P1 */}
-                    <div className="box">
-                        <Image src="/assets/package1.jpg" alt="" fill />
-                        <ul className="top">
-                            <li>7 days</li>
-                        </ul>
-                        <div className="bottom">
-                            <time dateTime="2024-10-27">27 october</time>
-                            <ul>
-                                <li>HUNZA</li>
-                                <li>PKR 50,000</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* P2 */}
-                    <div className="box">
-                        <Image src="/assets/package2.jpg" alt="" fill />
-                        <ul className="top">
-                            <li>5 days</li>
-
-                        </ul>
-                        <div className="bottom">
-                            <time dateTime="2024-10-27">27 october</time>
-                            <ul>
-                                <li>SKARDU</li>
-                                <li>PKR 50,000</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* P3 */}
-                    <div className="box">
-                        <Image src="/assets/package3.jpg" alt="" fill />
-                        <ul className="top">
-                            <li>3 days</li>
-
-                        </ul>
-                        <div className="bottom">
-                            <time dateTime="2024-10-27">27 october</time>
-                            <ul>
-                                <li>FAIRY MEADOWS</li>
-                                <li>PKR 40,000</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* P4 */}
-                    <div className="box">
-                        <Image src="/assets/package1.jpg" alt="" fill />
-                        <ul className="top">
-                            <li>7 days</li>
-                        </ul>
-                        <div className="bottom">
-                            <time dateTime="2024-10-27">27 october</time>
-                            <ul>
-                                <li>KASHMIR</li>
-                                <li>PKR 25,000</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* P5 */}
-                    <div className="box">
-                        <Image src="/assets/package2.jpg" alt="" fill />
-                        <ul className="top">
-                            <li>5 days</li>
-
-                        </ul>
-                        <div className="bottom">
-                            <time dateTime="2024-10-27">27 october</time>
-                            <ul>
-                                <li>SWAT - KALAM</li>
-                                <li>PKR 30,000</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* P6 */}
-                    <div className="box">
-                        <Image src="/assets/package3.jpg" alt="" fill />
-                        <ul className="top">
-                            <li>3 days</li>
-
-                        </ul>
-                        <div className="bottom">
-                            <time dateTime="2024-10-27">27 october</time>
-                            <ul>
-                                <li>PHANDER VALLEY</li>
-                                <li>PKR 90,000</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* P7 */}
-                    <div className="box">
-                        <Image src="/assets/package3.jpg" alt="" fill />
-                        <ul className="top">
-                            <li>3 days</li>
-
-                        </ul>
-                        <div className="bottom">
-                            <time dateTime="2024-10-27">27 october</time>
-                            <ul>
-                                <li>GHIZER VALLEY</li>
-                                <li>PKR 100,000</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* P8 */}
-                    <div className="box">
-                        <Image src="/assets/package3.jpg" alt="" fill />
-                        <ul className="top">
-                            <li>3 days</li>
-
-                        </ul>
-                        <div className="bottom">
-                            <time dateTime="2024-10-27">27 october</time>
-                            <ul>
-                                <li>CHITRAL</li>
-                                <li>PKR 45,000</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* P9 */}
-                    <div className="box">
-                        <Image src="/assets/package3.jpg" alt="" fill />
-                        <ul className="top">
-                            <li>3 days</li>
-
-                        </ul>
-                        <div className="bottom">
-                            <time dateTime="2024-10-27">27 october</time>
-                            <ul>
-                                <li>BEACHES OF PAKISTAN</li>
-                                <li>PKR 110,000</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
 
 
             {/* <section className="blog">
@@ -396,12 +440,20 @@ export default function Home() {
             <footer>
                 <div className="links">
                     <ul>
-                        <h4>about</h4>
-                        <li><a href="#">about us</a></li>
+                        <h4>About Us</h4>
+                        <li><a href="#">Our Team</a></li>
                         <li>
                             <h4>Contact</h4>
                             <ul style={{ marginTop: "8px" }}>
-                                <li><a href="#"><FaWhatsapp /> +923499816568</a></li>
+                                <li>
+                                    <a target="_blank" href="https://wa.me/+923499816568"><FaWhatsapp size={20} /> +923499816568</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://wa.me/+923415848526"><FaWhatsapp size={20} /> +923415848526</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="mailto:concordiaexpeditions@gmail.com"><FaEnvelope size={20} /> concordiaexpeditions@gmail.com</a>
+                                </li>
                             </ul>
                         </li>
                         <li><Link href="/gallery">Gallery</Link></li>
