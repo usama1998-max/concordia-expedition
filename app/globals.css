@@ -417,6 +417,7 @@ body {
     border-radius: 2rem;
     color: #fff;
     position: relative;
+    
 }
 
 .home header {
@@ -426,9 +427,12 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     gap: 1rem;
+    /* border: 1px solid white; */
+    align-content: start;
 }
+
 
 .home header i {
     font-size: 1.8rem;
@@ -445,9 +449,10 @@ body {
 .home header .logo{
     width: 200px;
     height: 200px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-top: 50px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    align-self: self-start;
     display: block;
   }
 
@@ -1138,6 +1143,12 @@ footer .copright p {
 }
 
 @media (max-width: 920px) {
+
+    .home header .logo{
+        width: 150px;
+        height: 150px;
+    }
+
     .achivment {
        
         width: 100%;
@@ -1231,13 +1242,13 @@ footer .copright p {
     }
 
     .home header{
-        margin-top: 20%;
+        margin-top: 0;
     }
 
     .home .main .card .loader h1 {
-        font-size: 35px;
+        font-size: 50px;
         word-spacing: 20px;
-        margin-top: 50%;
+        margin-top: 20%;
     }
 
     .achivment {
@@ -1377,15 +1388,18 @@ footer .copright p {
 
 }
 
-@media (max-width: 546px) {
+@media (max-width: 550px) {
     .contactHeader{
         flex-direction: column;
         height: 150px;
         padding-bottom: 10px;
     }
+    
+    
 
     .home .main .card .loader h1{
-        margin-top: 60%;
+        margin-top: 40%;
+        font-size: 35px;
     }
 
     .home .main .card .loader .words .word{
@@ -1394,6 +1408,11 @@ footer .copright p {
 
     .home header{
         margin-top: 1%;
+    }
+
+    .home header .logo{
+        width: 100px;
+        height: 100px;
     }
 
     .card{
@@ -1412,27 +1431,6 @@ footer .copright p {
       padding: 20px;
     }
 
-    .home header .logo{
-      width: 200px;
-      height: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-
-    .logo{
-        height: 200px;
-    }
-
-    header{
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      
-      /* border: 2px solid red; */
-    }
-
-    
     
     .tripPlanForm{
         height: 120vh;    
@@ -1461,7 +1459,7 @@ footer .copright p {
 @media (max-width: 530px) {
 
     .home .main .card .loader h1{
-        margin-top: 65%;
+        margin-top: 50%;
     }
 
     .home .main .card .loader .words .word{
@@ -1489,11 +1487,9 @@ footer .copright p {
     }
 
     .home header .logo{
-      width: 200px;
-      height: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
+      width: 80px;
+      height: 80px;
+      
     }
 
     .logo{
@@ -1539,7 +1535,7 @@ footer .copright p {
 @media (max-width: 460px) {
 
     .home .main .card .loader h1{
-        margin-top: 80%;
+        margin-top: 70%;
         font-size: 30px;
     }
 
@@ -1568,11 +1564,8 @@ footer .copright p {
     }
 
     .home header .logo{
-      width: 200px;
-      height: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
+      width: 60px;
+      height: 60px;
     }
 
     .logo{
@@ -1615,10 +1608,11 @@ footer .copright p {
 @media (max-width: 430px) {
 
     .home .main .card .loader h1{
-        margin-top: 90%;
+        margin-top: 70%;
         font-size: 25px;
         letter-spacing: 1px;
-        word-spacing: 5px;
+        word-spacing: 1px;
+        width: 100%;
     }
 
     .home .main .card .loader .words .word{
@@ -1646,11 +1640,9 @@ footer .copright p {
     }
 
     .home header .logo{
-      width: 200px;
-      height: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
+      width: 80px;
+      height: 80px;
+      margin-left: -10px;
     }
 
     .logo{
@@ -1694,94 +1686,6 @@ footer .copright p {
 }
 
 
-@media (max-width: 410px) {
-
-    .home .main .card .loader h1{
-        margin-top: 90%;
-        font-size: 20px;
-        letter-spacing: 1px;
-    }
-
-    .home .main .card .loader .words .word{
-        font-size: 20px;
-    }
-
-    .home header{
-        margin-top: 1%;
-    }
-
-    .card{
-        margin-top: -180px;
-    }
-
-    .words{
-        font-size: 20px;
-    }
-
-
-    .home{
-      width: 100%;
-      height: 200px;
-      min-height: 70vh;
-      padding: 20px;
-    }
-
-    .home header .logo{
-      width: 200px;
-      height: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-
-    .logo{
-        height: 200px;
-    }
-
-    header{
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      
-      /* border: 2px solid red; */
-    }
-
-    .achivment .box img{
-        width: 100px;
-        height: 100px;
-    }
-
-    /* .achivment{
-        flex-direction: column;
-    } */
-
-    .tripPlanForm{
-        height: 150vh;    
-    }
-
-    .tripPlan{
-        width: 95%;
-        height: 140vh;
-        
-    }
-
-    .tripPlan p{
-        margin-top: 30px;
-    }
-    
-    .makeTripBtn h1{
-        margin-top: -40%;
-    }
-
-    .makeTripBtn button{
-        width: 80%;
-        margin-bottom: 30px;
-    }
-
-
-    
-}
-
 @media (max-width: 400px) {
     .contactHeader{
         flex-direction: column;
@@ -1806,12 +1710,8 @@ footer .copright p {
     }
 
     .home header .logo{
-      width: 200px;
-      height: 200px;
-      margin-top: 50px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
+      width: 60px;
+      height: 60px;
     }
 
     .logo{
@@ -1867,14 +1767,15 @@ footer .copright p {
     
 }
 
+@media (max-width: 380px) {
 
-@media (max-width: 400px) {
     .card{
-        margin-top: -400px;
+        margin-top: -350px;
     }
 
     .words{
         font-size: 5px;
+        width: 100%;
     }
 
 
@@ -1886,12 +1787,8 @@ footer .copright p {
     }
 
     .home header .logo{
-      width: 200px;
-      height: 200px;
-      margin-top: 50px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
+      width: 60px;
+      height: 60px;
     }
 
     .logo{
@@ -1961,12 +1858,8 @@ footer .copright p {
     }
 
     .home header .logo{
-      width: 200px;
-      height: 200px;
-      margin-top: 50px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
+      width: 60px;
+      height: 60px;
     }
 
     .logo{

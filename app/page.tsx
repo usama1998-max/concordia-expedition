@@ -28,7 +28,7 @@ export default function Home() {
 
             <section className="home">
                 <header>
-                    <Image className="logo" src={"/logos/logo-transparent-white.png"} alt="" style={{ marginTop: "30px" }} width={"250"} height={"250"} />
+                    <Image className="logo" src={"/logos/logo-transparent-white.png"} alt="concordia expedition" width={"200"} height={"200"} />
                     {/* <nav id="navbar">
                         <i className="fa fa-close"></i>
                         <Link href="/about" className="active">About</Link>
