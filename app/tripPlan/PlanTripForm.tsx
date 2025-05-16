@@ -4,7 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { FaCalendarAlt, FaCalendarCheck, FaCheckCircle, FaCity, FaComment, FaEnvelope, FaMountain, FaPhoneAlt, FaUser } from "react-icons/fa";
 import { FaPeopleRoof, FaPerson, FaX } from "react-icons/fa6";
 import { toast } from 'react-toastify';
-import api from '@/app/lib/microservice';
+// import api from '@/app/lib/microservice';
+import emailjs from '@emailjs/browser';
 
 const PlanTripForm = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -34,15 +35,34 @@ const PlanTripForm = () => {
         e.preventDefault();
         // your form handling logic
         console.log('Form submitted');
+
+        if (!formRef.current) return
+
         const formData = new FormData(e.currentTarget); // or formRef.current
         const data = Object.fromEntries(formData.entries());
         console.log(data);
         setIsVisible(false);
 
         try {
-            const response = await api.post('/send-email/', data);
-            toast.success('Submitted successfully!');
-            console.log(response.data);
+            //const response = await api.post('/send-email/', data);
+
+            emailjs
+                .sendForm(
+                    process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+                    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+                    formRef.current,
+                    process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+                )
+                .then(
+                    () => toast.success('Submitted successfully!'),
+                    (error) => {
+                        console.log(error);
+                        toast.error('Submission failed');
+                    }
+                )
+
+
+
         } catch (error) {
             toast.error('Submission failed');
             console.error(error);
