@@ -140,8 +140,8 @@ body {
     margin-right: auto;
     margin-left: auto;
     align-items: center;
-    border: 1px solid white;
-    background-color: #191515;
+    border: 1px solid var(--secondary-clr);
+    background-color: var(--primary-clr);
     border-radius: 15px;
     
 }
@@ -153,18 +153,18 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     height: 80vh;
-    color: var(--white-clr);
+    color: var(--secondary-clr);
     font-size: 1.3rem;
 }
 
 .tripPlan h4 {
-    color: var(--white-clr);
+    color: var(--secondary-clr);
     font-size: 1.8rem;
     margin: 2rem 0;
 }
 
 .tripPlan p {
-    color: var(--text-clr);
+    color: var(--white-clr);
     font-size: 1.3rem;
     margin-top: 10px;
     margin: 2rem 0;
@@ -177,7 +177,7 @@ body {
     width: 40%;
     align-self: center;
     position: relative;
-    border: 1px solid white;
+    border: 1px solid var(--secondary-clr);
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 15px;
@@ -191,15 +191,16 @@ body {
 .tripPlan .tripPlanForm input {
     width: 100%;
     padding: 1rem;
-    background-color: #191515;
+    background-color: var(--primary-clr);
     border: none;
     outline: none;
     color: var(--white-clr);
     font-size: 1.3rem;
+    text-transform: none;
 }
 
 .tripPlanForm input::placeholder {
-    color: var(--white-clr);
+    color: var(--secondary-clr);
 }
 
 /* Chrome/Safari - calendar icon color tweak using filter */
@@ -221,8 +222,8 @@ body {
 } */
 
 .tripPlanForm .enquirySubmit {
-    color: var(--white-clr);
-    background: var(--black-clr); 
+    color: var(--secondary-clr);
+    background: var(--primary-clr); 
     border-radius: 15px;
     cursor: pointer;
     position: relative;
@@ -234,14 +235,19 @@ body {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid var(--white-clr);
+    border: 2px solid var(--secondary-clr);
     width: 30%;
     
 }
 
 .tripPlanForm .enquirySubmit:active {
-    color: var(--black-clr);
-    background: var(--white-clr); 
+    color: var(--primary-clr);
+    background: var(--secondary-clr); 
+}
+
+.tripPlanForm .enquirySubmit:hover {
+    color: var(--primary-clr);
+    background: var(--secondary-clr); 
 }
 
 /* ------------------------- trip plan popover section ends here ---------------- */
@@ -1268,6 +1274,15 @@ footer .copright p {
 
     .tripPlan{
         width: 80%;
+        height: 200vh;
+    }
+
+    .tripPlan .tripPlanForm{
+        height: 200vh;
+    }
+
+     .tripPlan .tripPlanForm .form{
+        height: 150vh;
     }
 
     .tripPlanOverlay{
@@ -1658,12 +1673,20 @@ footer .copright p {
     }
 
     .tripPlanForm{
-        height: 150vh;    
+        height: 220vh;    
+    }
+
+    .tripPlan .tripPlanForm{
+        height: 220vh;
+    }
+
+     .tripPlan .tripPlanForm .form{
+        height: 150vh;
     }
 
     .tripPlan{
         width: 95%;
-        height: 140vh;
+        height: 200vh;
         
     }
 

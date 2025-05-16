@@ -1,11 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { FaCalendarAlt, FaCalendarCheck, FaCheckCircle, FaCity, FaEnvelope, FaMountain, FaPhoneAlt, FaUser } from "react-icons/fa";
+import { useEffect, useRef, useState } from "react";
+import { FaCalendarAlt, FaCalendarCheck, FaCheckCircle, FaCity, FaComment, FaEnvelope, FaMountain, FaPhoneAlt, FaUser } from "react-icons/fa";
 import { FaPeopleRoof, FaPerson, FaX } from "react-icons/fa6";
+import { toast } from 'react-toastify';
+import api from '@/app/lib/microservice';
 
 const PlanTripForm = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const formRef = useRef<HTMLFormElement>(null);
 
     useEffect(() => {
 
@@ -18,6 +21,36 @@ const PlanTripForm = () => {
     const closeTripFormPopover = () => {
         setIsVisible(false)
     }
+
+    const handleExternalSubmit = () => {
+        if (formRef.current) {
+            formRef.current.requestSubmit();
+            formRef.current.reset();
+
+        }
+    };
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        // your form handling logic
+        console.log('Form submitted');
+        const formData = new FormData(e.currentTarget); // or formRef.current
+        const data = Object.fromEntries(formData.entries());
+        console.log(data);
+        setIsVisible(false);
+
+        try {
+            const response = await api.post('/send-email/', data);
+            toast.success('Submitted successfully!');
+            console.log(response.data);
+        } catch (error) {
+            toast.error('Submission failed');
+            console.error(error);
+        }
+
+        // toast.success('Success!');
+    };
+
 
     return (
         <>
@@ -36,55 +69,60 @@ const PlanTripForm = () => {
                     <h4>Make Trip</h4>
                     <p>Make your trip and we will send you the details</p>
                     <div className="tripPlanForm">
-                        <form className="form">
+                        <form className="form" ref={formRef} onSubmit={handleSubmit}>
                             <div className="input-group">
                                 <FaUser className="icon" size={20} />
-                                <input type="text" placeholder="Name" autoComplete="off" />
+                                <input type="text" placeholder="Name" name="name" autoComplete="off" required />
                             </div>
 
                             <div className="input-group">
                                 <FaEnvelope className="icon" size={20} />
-                                <input type="email" placeholder="Email" autoComplete="off" />
+                                <input type="email" placeholder="Email" name="email" autoComplete="off" required />
                             </div>
 
                             <div className="input-group">
                                 <FaPhoneAlt className="icon" size={20} />
-                                <input type="text" placeholder="Phone No." autoComplete="off" />
+                                <input type="text" placeholder="Phone No." name="phone" autoComplete="off" required />
                             </div>
 
                             <div className="input-group">
                                 <FaCalendarAlt className="icon" size={20} />
-                                <input type="date" />
+                                <input type="date" name="date" required />
                             </div>
 
                             <div className="input-group">
                                 <FaMountain className="icon" size={20} />
-                                <input type="text" placeholder="Destination" autoComplete="off" />
+                                <input type="text" placeholder="Destination" name="destination" autoComplete="off" required />
                             </div>
 
                             <div className="input-group">
                                 <FaCity className="icon" size={20} />
-                                <input type="text" placeholder="Departure City" autoComplete="off" />
+                                <input type="text" placeholder="Departure City" name="departure" autoComplete="off" required />
                             </div>
 
                             <div className="input-group">
                                 <FaPeopleRoof className="icon" size={20} />
-                                <input type="number" placeholder="Number of Rooms" autoComplete="off" />
+                                <input type="number" min={0} placeholder="Number of Rooms" name="rooms" autoComplete="off" required />
                             </div>
 
                             <div className="input-group">
                                 <FaCalendarCheck className="icon" size={20} />
-                                <input type="number" placeholder="Number of Days" autoComplete="off" />
+                                <input type="number" min={0} placeholder="Number of Days" name="days" autoComplete="off" required />
                             </div>
 
                             <div className="input-group">
                                 <FaPerson className="icon" size={20} />
-                                <input type="number" placeholder="Number of People" autoComplete="off" />
+                                <input type="number" min={0} placeholder="Number of People" name="people" autoComplete="off" required />
+                            </div>
+
+                            <div className="input-group">
+                                <FaComment className="icon" size={20} />
+                                <input type="text" maxLength={200} placeholder="Comments..." name="comments" autoComplete="off" required />
                             </div>
 
 
                         </form>
-                        <button type="submit" className="enquirySubmit" onClick={closeTripFormPopover}>Send</button>
+                        <button type="submit" className="enquirySubmit" onClick={handleExternalSubmit}>Send</button>
 
                         <p><FaCheckCircle color="green" /> This data is only shared within our company</p>
                         <p><FaCheckCircle color="green" /> Your privacy is safe with us</p>

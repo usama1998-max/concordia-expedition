@@ -14,17 +14,21 @@ import { FaXTwitter } from "react-icons/fa6";
 import PlanTripForm from "./tripPlan/PlanTripForm";
 import FAQ from './FAQ/FAQ';
 import SlideUpText from './textSlide/textSlide';
+import { ToastContainer } from 'react-toastify';
 
 
 export default function Home() {
 
     return (
         <div>
+
             <section className="contactHeader">
                 <a target="_blank" href="https://wa.me/+923499816568"><FaWhatsapp size={20} /> +923499816568</a>
                 <a target="_blank" href="https://wa.me/+923415848526"><FaWhatsapp size={20} /> +923415848526</a>
                 <a target="_blank" href="mailto:concordiaexpeditions@gmail.com"><FaEnvelope size={20} /> concordiaexpeditions@gmail.com</a>
             </section>
+
+
 
             <section className="home">
                 <header>
@@ -67,6 +71,7 @@ export default function Home() {
                 </div>
             </section>
 
+            <ToastContainer />
             <PlanTripForm />
 
             <section className="packages">
