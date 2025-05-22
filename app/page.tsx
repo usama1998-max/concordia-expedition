@@ -25,7 +25,22 @@ export default function Home() {
             <section className="contactHeader">
                 <a target="_blank" href="https://wa.me/+923499816568"><FaWhatsapp size={20} /> +923499816568</a>
                 <a target="_blank" href="https://wa.me/+923415848526"><FaWhatsapp size={20} /> +923415848526</a>
-                <a target="_blank" href="mailto:concordiaexpeditions@gmail.com"><FaEnvelope size={20} /> concordiaexpeditions@gmail.com</a>
+                <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=concordiaexpeditions@gmail.com"><FaEnvelope size={20} /> concordiaexpeditions@gmail.com</a>
+
+                <div className="header-social-platform">
+                    <a
+                        target="_blank"
+                        href="https://www.instagram.com/concordia_expeditions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <FaInstagram className="header-social-icons" />
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://www.tiktok.com/@concordia.expedit?_t=ZS-8w4cexGGByq&_r=1"
+                    >
+                        <FaTiktok className="header-social-icons" />
+                    </a>
+                </div>
+
             </section>
 
 
